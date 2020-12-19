@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: linear-gradient(#666865, #1a83f3);
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  width: 514px;
+  height: 514px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 48px 48px;
+  background: grey;
+  border-radius: 10px;
+}
+
+.cell {
+  flex: 0 0 64px;
+  height: 64px;
+  border-radius: 20px;
+}
+
+.mainSection {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 90px;
+  color: rgb(16, 16, 16);
+  margin-top: 10px;
+}
+
+.scores {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  color: rgb(16, 16, 16);
+  font-size: 20px;
+}
+
+
+.leftColumn {
+  width: 400px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgb(135, 135, 135);
+}
+
+.leftColumn button {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.leftColumn h2, p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.leftColumn p {
+  color: rgb(255, 255, 255);
+}
+
+.currDifficulty {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.difficulty {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.difficulty > button {
+  margin-top: 10px;
+}
+
+.start {
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+}
+
+.startGame {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.easy {
+  background-color: rgb(40, 172, 40);
+  font-size: 30px;
+}
+
+.medium {
+  background-color: orange;
+  font-size: 30px;
+}
+
+.hard {
+  background-color: red;
+  font-size: 30px;
+}
+
+.directions {
+  flex-grow: 1;
+}
+
+.directions p {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.rightColumn {
+  width: 300px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  background-color: rgb(135, 135, 135);
+  color: white;
+}
+
+.rightColumn .recent {
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.averages {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.averages h2 {
+  text-decoration: underline;
+}
+
+
+

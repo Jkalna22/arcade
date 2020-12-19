@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div class='leftColumn'>
+        <div class='directions'>
+            <h2>How to play:</h2>
+            <p>Once you click 'Start' the snake will start
+                moving. Try to eat as many fruits as you can
+                without running into the walls, or your snake's body.
+            </p>
+        </div>
+        <div class='difficulty'>
+            <h2>Step One: <br> Select your difficulty</h2>
+            <button class='easy' id="easy">Easy</button>
+            <button class='medium' id="medium">Medium</button>
+            <button class='hard' id="hard">Hard</button>
+            <h2 class='currDifficulty'>Current Difficulty</h2>
+            <p class='diffValue' id='difficultyValue'>medium</p>
+        </div>
+        <div class='start'>
+            <h2>Step Two: <br> Start the game <br>and have fun!!</h2>
+            <button class='startGame' id="startGame">Start</button>
+        </div>
+    </div>
+    <div class="mainSection">
+        <h1>Snake</h1>
+        <section class='scores'>
+            <div>
+                <h2>Current Score</h2>
+                <p id='currScore'>0</p>
+            </div>
+            <div>
+                <h2>High Score</h2>
+                <p id='highScore'>0</p>
+            </div>
+        </section>
+        <section class="grid"></section>
+    </div>
+    <div class='rightColumn'>
+        <div class='averages'>
+            <h2>Average Snake Length:</h2>
+            <p id='averageLength'>0</p>
+        </div>
+        <h2 class='recent'>Recent Games:</h2>
+        <div class='recentGames'></div>
+    </div>
+</body>
+
+</html>
